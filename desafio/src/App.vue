@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Consulta Pacientes</h1>
+        <p class="lead"> Utilizando a Biblioteca AXIOS fazendo requisições Ajax a uma API REST, referente ao desafio da Anlix.</p>
+      </div>
+    </div>
+
+    <div class="container"> 
+
+      <PacientesLista />
+
+    </div>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import  PacientesLista from './components/PacientesLista.vue'
 
-export default {
-  name: 'App',
+export default ({
   components: {
-    HelloWorld
+    PacientesLista
   }
-}
+})
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
